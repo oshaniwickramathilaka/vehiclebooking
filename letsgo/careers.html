@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Document</title>
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .radio-row{
+        display: flex;
+        gap: 10px;
+        
+       }
+       .radio-row input{
+        height: 13px;
+       }
+    </style>
+    <script>
+    $(document).ready(function(){
+        $("#position").click(function(){
+            $(".boat").hide();
+        });
+    });
+    </script>
+    
+        
+           
+        
+
+    
+
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">
+                <img src="logo.jpg" alt="Logo">
+            </a>
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="logistics.html">Logistics</a></li>
+                
+                <li><a href="contact.html">Contacts</a></li>
+                <li><a href="signup.html" class="sign-in-button">Sign In</a></li>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+        <div class="dropdown-menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="careers.html">Careers</a>
+            <a href="logistics.html">Logistics</a>
+            
+            <a href="contact.html">Contacts</a>
+            <a href="signup.html" class="sign-in-button">Sign In</a>
+        </div>
+    </nav>
+    <script src="script.js"></script>
+
+
+
+   <div class="boy0">
+    <div class="boy1">
+    <div class="boy4">
+        <h2>If you enthusiastic with Let's go<br>You can apply for a job!</h2>
+    <p class="boat"> Available Positions<br>
+        
+      * Operations Manager<br>
+      * Chief Executive Officer(CEO)<br>
+       * Fleet Manager<br>
+      * Accountant<br>
+      *  Driver<br>
+    
+</p><br><br>
+    <img src="images\background8.jpg">
+   
+    </div>
+    
+    <div class="boy3">
+    <form id="form" method="post">
+    
+        
+        <h1>Registration Form</h1><br><br>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="username" required minlength="3" maxlength="15"><br>
+        <label for="district">District:</label><br>
+        <input type="text" id="district" name="district"><br>
+        <label for="position">Position:</label><br>
+        <select id="position"><br>
+            <option>Select Position</option>
+            <option>Operations Manager</option>
+            <option>CEO</option>
+            <option>Fleet Manager</option>
+            <option>Accountant</option>
+            <option>Driver</option>
+        </select>
+        <br>
+        <label for="phone no">Phone No:</label><br>
+        <input type="number" id="phone no" name="phone no" placeholder="123 456 7890"  required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="name" placeholder="abc@gmail.com"><br><br>
+        <label for="cv">Upload CV</label><br>
+        <button id="Browse" disabled>Browse </button><br><br><br>
+        <h4>If it is a driver position</h4><br>
+        Vehicle Type:<br>
+        <div class="radio-row">
+        <label>
+            <input type="radio" id="vtype"  name="vtype" value="car" checked >car </label>
+        
+        <label>
+        <input type="radio" id="vtype"  name="vtype" value="van" checked >Van
+        </label>
+        
+        <label>
+            <input type="radio" id="vtype"  name="vtype" value="mini" checked >Mini
+            </label>
+            
+            <label>
+                <input type="radio" id="vtype"  name="vtype" value="flex" checked >Flex
+                </label>
+                
+    
+        <label>
+                <input type="radio" id="vtype"  name="vtype" value="minivan" checked >Minivan
+                </label>
+                
+                <label>
+                    <input type="radio" id="vtype"  name="vtype" value="tuk" checked >Tuk
+                    </label>
+                    
+                    <label>
+                        <input type="radio" id="vtype"  name="vtype" value="truck" checked >Truck
+                        </label>
+                        
+                        <label>
+                            <input type="radio" id="vtype"  name="vtype" value="lorry" checked >Lorry
+                            </label>
+                            </div>
+               
+        
+
+        <input type="submit" value="submit">
+     
+     
+    </form>
+</div>
+</div>
+<footer>
+    
+    <div class="section3-div2">
+        <div class="textpart">
+            <label><ion-icon name="mail-outline"></ion-icon>Email - Letsgo589@gmail.com</label>
+            <label><ion-icon name="call-outline"></ion-icon>Tel - +94 (11 259 368)</label>
+        </div>
+        <div class="labelpart">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+
+    
+     
+    
+    
+    
+</body>
+</html>

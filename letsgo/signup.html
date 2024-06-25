@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up to Let's Go</title>
+    <link rel="icon" href="logo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .aledin{
+            height: 20%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">
+                <img src="logo.jpg" alt="Logo">
+            </a>
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="logistics.html">Logistics</a></li>
+                
+                <li><a href="contact.html">Contacts</a></li>
+                <li><a href="signup.html" class="sign-in-button">Sign In</a></li>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+        <div class="dropdown-menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="careers.html">Careers</a>
+            <a href="logistics.html">Logistics</a>
+            
+            <a href="contact.html">Contacts</a>
+            <a href="signup.html" class="sign-in-button">Sign In</a>
+        </div>
+    </nav>
+    <script src="script.js"></script>
+
+
+
+   
+    
+
+    <section class="signup_section1">
+
+        <div class="background_image"></div>
+
+        <div class="signup_section1_div1">
+            <form action="#" method="post">
+
+                <span>Login To Your Account</span>
+
+                <label id="email_label">Email</label>
+                <input id="login_email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                title="Please enter a valid email address (e.g., user@example.com)" required>
+                <small id="login_email_small"></small>
+
+                <label id="password_label">Password</label>
+                <input id="login_password" type="password">
+                <small id="login_password_small"></small>
+                
+                <button onclick="validateFunction4();">Register</button>
+
+            </form>
+        </div>
+
+    </section>
+
+    <footer class="aledin">
+        <div class="section3-div2">
+            <div class="textpart">
+                <label><ion-icon name="mail-outline"></ion-icon>Email - Letsgo589@gmail.com</label>
+                <label><ion-icon name="call-outline"></ion-icon>Tel - +94 (11 259 368)</label>
+            </div>
+            <div class="labelpart">
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
